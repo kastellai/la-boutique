@@ -60,7 +60,7 @@ strong {
 .wrapper .__hero .intestazione {
   height: 100%;
   padding: 30px;
-  border: 2px solid;
+  /* border: 2px solid; */
   color: rgb(44, 36, 36);
   font-size: 2rem;
   text-shadow: 3px 3px rgba(0,0,0,0.315);
@@ -85,10 +85,10 @@ strong {
 }
 
 .wrapper__products {
-  margin: 0 40px;
-  height: 38vh;
+  margin: 20px 40px;
   display: flex;
-  overflow-y: hidden;
+  flex-wrap: wrap;
+  /* overflow-y: hidden; */
 }
 
 .product {
@@ -98,6 +98,8 @@ strong {
   align-items: center;
   margin: 7.5px;
   padding: 10px;
+
+  width: 150px;
 
   min-width: 150px;
 
@@ -120,5 +122,5 @@ strong {
 }
 
 .product p {
-  align-self: flex-start;
+  align-self: flex-end;
 }
