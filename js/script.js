@@ -27,14 +27,6 @@ function createProduct(parent, imgUrl, productTitle, textPrice) {
     parent.append(title, price);
   }
   
-  // fetch("https://fakestoreapi.com/products") // <== importare la lista prodotti in modo remoto
-  //   .then((response) => response.json())
-  //   .then((data) => {
-  //     products = data;
-  //     renderProducts();
-  //   });
-  
-  // let products = [];
   const wrapperProducts = document.querySelector(".wrapper__products");
   
   function renderProducts(listItems) {
