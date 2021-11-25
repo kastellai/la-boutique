@@ -50,7 +50,7 @@ strong {
 
 .wrapper .__hero {
   position: relative;
-  background: rgba(0,0,0,0.335);
+  /* background: rgba(0,0,0,0.335); */
   top: 0;
   height: 350px;
   width: 100%;
@@ -58,13 +58,39 @@ strong {
 }
 
 .wrapper .__hero .intestazione {
-  height: 100%;
+  position: absolute;
   padding: 30px;
-  /* border: 2px solid; */
-  color: rgb(44, 36, 36);
+  height: 100%;
+  color: rgb(58, 52, 52);
+  font-size: 1.5rem;
+  z-index: 3;
+
+  /* color: rgb(44, 36, 36);
   font-size: 2rem;
   text-shadow: 3px 3px rgba(0,0,0,0.315);
-  z-index: 3;
+  z-index: 3; */
+}
+
+.cartBanner {
+  /* border: 2px solid red; */
+  background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cartBanner .cartProductsNum {
+  margin-right:20px;
+}
+
+.cartBanner .cartClearBtn {
+  border: 0;
+  background: transparent;
+  text-shadow: 2px 2px 2px rgbs(255, 255, 255, 0.801);
+  cursor: pointer;
+}
+
+.cartBanner .cartClearBtn:hover {
+  transform: scale(1.6);
 }
 
 .wrapper .__hero .intestazione h2 { 
